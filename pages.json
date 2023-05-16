@@ -1,0 +1,141 @@
+{
+  "pages": [{
+      "path": "pages/home/home",
+      "style": {
+        "navigationStyle": "custom"
+      }
+
+    }, {
+      "path": "pages/means/means",
+      "style": {
+        "navigationStyle": "custom"
+      }
+
+    }, {
+      "path": "pages/subjec/subjec",
+      "style": {
+        "navigationBarTitleText": "模考刷题"
+      }
+    },
+    {
+      "path": "pages/seek/seek",
+      "style": {
+        "navigationBarTitleText": "咨询"
+      }
+
+    },
+    {
+      "path": "pages/my/my",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    }
+
+    , {
+      "path": "pages/seek/seek",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false
+      }
+
+    }
+  ],
+  "tabBar": {
+    "selectedColor": "#000000",
+    "list": [{
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "static/ico_sy_nor@2x.png",
+        "selectedIconPath": "static/ico_sy_sel@2x.png"
+      },
+      {
+        "pagePath": "pages/means/means",
+        "text": "资料",
+        "iconPath": "static/ico_zl_nor@2x.png",
+        "selectedIconPath": "static/ico_zl_sel@2x.png"
+
+      },
+      {
+        "pagePath": "pages/subjec/subjec",
+        "text": "刷题",
+        "iconPath": "static/ico_st_nor@2x.png",
+        "selectedIconPath": "static/ico_st_sel.png"
+
+      },
+      {
+        "pagePath": "pages/seek/seek",
+        "text": "咨询",
+        "iconPath": "static/ico_zx_nor@2x.png",
+        "selectedIconPath": "static/ico_zx_sel@2x.png"
+
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "static/ico_gr_sel.png",
+        "selectedIconPath": "static/ico_wd_sel@2x.png"
+      }
+    ]
+  },
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+
+  },
+  "uniIdRouter": {},
+  "subPackages": [{
+      "root": "subpkg",
+      "pages": [{
+        "path": "good_detail/good_detail",
+        "style": {
+          "navigationBarTitleText": "",
+          "enablePullDownRefresh": false,
+          "navigationStyle": "custom"
+
+        }
+
+      }, {
+        "path": "Brush/Brush",
+        "style": {
+          "navigationBarTitleText": "",
+          "enablePullDownRefresh": false,
+          "navigationBarTitleText": "题目类型"
+        }
+
+      }, {
+        "path": "my-search/my-search",
+        "style": {
+          "navigationBarTitleText": "",
+          "enablePullDownRefresh": false,
+          "navigationStyle": "custom"
+        }
+
+      }, {
+        "path": "Login/Login",
+        "style": {
+          "navigationBarTitleText": "",
+          "enablePullDownRefresh": false,
+          "navigationStyle": "custom"
+        }
+
+      }, {
+        "path": "regiester/regiester",
+        "style": {
+          "navigationBarTitleText": "",
+          "enablePullDownRefresh": false
+        }
+
+      }, {
+        "path": "TitleType/TitleType",
+        "style": {
+          "navigationBarTitleText": "",
+          "enablePullDownRefresh": false
+        }
+
+      }]
+
+    }
+
+  ]
+}
