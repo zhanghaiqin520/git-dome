@@ -18,8 +18,14 @@ $http.baseUrl = 'http://www.wsit.cn:8068/shuati1/public/index.php/api'
 //请求拦截器
 
 $http.beforeRequest = function(options) {
+  // if (uni.getStorageSync('token')) {
+  //   options.header.Authorization = 'Bearer ' + uni.getStorageSync('token')
+  //   console.log(options);
+  // }
+  // console.log(token);
   options.header = {
-    "Content-Type": 'application/x-www-form-urlencoded'
+    "Content-Type": 'application/x-www-form-urlencoded',
+    "Authorization": 'Bearer ' + uni.getStorageSync('token') || '',
   }
   uni.showLoading({
     title: "数据加载中..."

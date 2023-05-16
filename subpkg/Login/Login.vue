@@ -87,12 +87,24 @@
         form: {
           account: null,
           password: null,
-          token: ""
         },
         isLogin: null,
         isrember: false,
 
       };
+    },
+    mounted() {
+      const info = uni.getStorageSync('info');
+      if (info.rember) {
+        console.log(info);
+        this.form.account = info.account,
+          this.form.password = info.password,
+          this.$nextTick(() => {
+            this.isrember = info.rember
+          })
+
+      }
+
     },
     methods: {
       async Login() {
@@ -102,9 +114,35 @@
           } = await uni.$http.post('/user/login', this.form);
           if (res.code !== 1) return uni.$showMsg(res.msg)
           uni.$showMsg(res.msg)
-          // 13888888888
+          // 13888888888,123123
           const token = res.data.userinfo.token
-          console.log(token);
+          uni.setStorage({
+            key: 'token',
+            data: token,
+          });
+          let {
+            account,
+            password
+          } = {
+            ...this.form
+          }
+          let rember = this.isrember
+
+
+          uni.setStorage({
+            key: 'info',
+            data: {
+              account,
+              password,
+              rember,
+            },
+          });
+
+          //跳转hoem
+          uni.switchTab({
+            url: '/pages/home/home'
+          });
+
 
         }
       },

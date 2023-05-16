@@ -87,53 +87,61 @@
   "subPackages": [{
       "root": "subpkg",
       "pages": [{
-        "path": "good_detail/good_detail",
-        "style": {
-          "navigationBarTitleText": "",
-          "enablePullDownRefresh": false,
-          "navigationStyle": "custom"
+          "path": "good_detail/good_detail",
+          "style": {
+            "navigationBarTitleText": "",
+            "enablePullDownRefresh": false,
+            "navigationStyle": "custom"
 
+          }
+
+        }, {
+          "path": "Brush/Brush",
+          "style": {
+            "navigationBarTitleText": "",
+            "enablePullDownRefresh": false,
+            "navigationBarTitleText": "题目类型"
+          }
+
+        }, {
+          "path": "my-search/my-search",
+          "style": {
+            "navigationBarTitleText": "",
+            "enablePullDownRefresh": false,
+            "navigationStyle": "custom"
+          }
+
+        }, {
+          "path": "Login/Login",
+          "style": {
+            "navigationBarTitleText": "",
+            "enablePullDownRefresh": false,
+            "navigationStyle": "custom"
+          }
+
+        }, {
+          "path": "regiester/regiester",
+          "style": {
+            "navigationBarTitleText": "",
+            "enablePullDownRefresh": false
+          }
+
+        }, {
+          "path": "TitleType/TitleType",
+          "style": {
+            "navigationBarTitleText": "",
+            "enablePullDownRefresh": false
+          }
+        },
+        {
+          "path": "topic/topicdetail",
+          "style": {
+            "navigationBarTitleText": "",
+            "enablePullDownRefresh": false,
+            "navigationStyle": "custom"
+          }
         }
-
-      }, {
-        "path": "Brush/Brush",
-        "style": {
-          "navigationBarTitleText": "",
-          "enablePullDownRefresh": false,
-          "navigationBarTitleText": "题目类型"
-        }
-
-      }, {
-        "path": "my-search/my-search",
-        "style": {
-          "navigationBarTitleText": "",
-          "enablePullDownRefresh": false,
-          "navigationStyle": "custom"
-        }
-
-      }, {
-        "path": "Login/Login",
-        "style": {
-          "navigationBarTitleText": "",
-          "enablePullDownRefresh": false,
-          "navigationStyle": "custom"
-        }
-
-      }, {
-        "path": "regiester/regiester",
-        "style": {
-          "navigationBarTitleText": "",
-          "enablePullDownRefresh": false
-        }
-
-      }, {
-        "path": "TitleType/TitleType",
-        "style": {
-          "navigationBarTitleText": "",
-          "enablePullDownRefresh": false
-        }
-
-      }]
+      ]
 
     }
 

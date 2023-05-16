@@ -147,7 +147,22 @@
       return {
 
       }
+    },
+    mounted() {
+      this.getLogin()
+    },
+    methods: {
+      async getLogin() {
+        const {
+          data: res
+        } = await uni.$http.post('/user/get_user_info');
+        if (res.code !== 1) return uni.$showMsg()
+        uni.$showMsg("数据加载成功..")
+      }
     }
+
+
+
   }
 </script>
 <style lang="scss">

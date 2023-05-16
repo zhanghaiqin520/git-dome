@@ -215,7 +215,8 @@
         </view>
       </view>
 
-      <view data-v-580b8874="" class="topic_list" v-for="item in Hotzhenz" :key="item.id">
+      <navigator :url="'/subpkg/topic/topicdetail?id='+item.id" data-v-580b8874="" class="topic_list"
+        v-for="item in Hotzhenz" :key="item.id">
         <view data-v-580b8874="" class="topic_name">{{item.info}}</view>
         <view data-v-580b8874="" class="topic_img flexs1">
           <image data-v-580b8874="" v-for="(items,i) in item.images"
@@ -245,7 +246,7 @@
             <view data-v-580b8874="">{{item.read_nums}}</view>
           </view>
         </view>
-      </view>
+      </navigator>
     </view>
     <!-- no.7 -->
     <view data-v-580b8874="" class="paper_box">
